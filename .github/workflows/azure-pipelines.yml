@@ -3,7 +3,7 @@ name: CI/CD Pipeline for Spring Boot Application
 on:
   push:
     branches:
-      - main  # ou o branch que você deseja monitorar
+      - production  # ou o branch que você deseja monitorar
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '21'
 
       - name: Cache Maven packages
         uses: actions/cache@v2
