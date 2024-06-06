@@ -23,22 +23,23 @@ public class NoticiaModel {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long Id_Noticia;
+	@Column (name="id_noticia")
+	private Long id_Noticia;
 	
-	@Column
-	private String Nm_Titulo;
+	@Column(name = "nm_titulo", nullable = false)
+	private String nm_Titulo;
 	
-	@Column
-	private String Nm_Subtitulo;
+	@Column(name = "nm_subtitulo", nullable = false)
+	private String nm_Subtitulo;
 	
-	@Column
-	private LocalDate Dt_Noticia;
+	@Column(name = "dt_noticia", nullable = false)
+	private LocalDate dt_Noticia;
 	
-	@Column
-	private String Ds_Imagem;
+	@Column(name = "ds_imagem", nullable = false)
+	private String ds_Imagem;
 	
-	@Column
-	private String Ds_Liink;
+	@Column(name = "ds_link", nullable = false)	
+	private String ds_Link;
 	
 
 }

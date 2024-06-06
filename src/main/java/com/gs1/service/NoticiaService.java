@@ -37,7 +37,7 @@ public class NoticiaService {
             noticia.setNm_Subtitulo(noticiaDetails.getNm_Subtitulo());
             noticia.setDt_Noticia(noticiaDetails.getDt_Noticia());
             noticia.setDs_Imagem(noticiaDetails.getDs_Imagem());
-            noticia.setDs_Liink(noticiaDetails.getDs_Liink());
+            noticia.setDs_Link(noticiaDetails.getDs_Link());
             return noticiaRepository.save(noticia);
         });
     }
