@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import com.gs1.assembler.NoticiaModelAssembler;
@@ -26,13 +27,14 @@ public class NoticiaController {
     private NoticiaModelAssembler assembler;
 
     @PostMapping
-    public CollectionModel<EntityModel<NoticiaModel>> createNoticias(@RequestBody List<NoticiaModel> noticias) {
+    public CollectionModel<EntityModel<NoticiaModel>> createNoticias(@Validated @RequestBody List<NoticiaModel> noticias) {
         List<EntityModel<NoticiaModel>> noticiaModels = noticiaService.createNoticias(noticias).stream()
                 .map(assembler::toModel)
                 .collect(Collectors.toList());
         return CollectionModel.of(noticiaModels,
                 linkTo(methodOn(NoticiaController.class).getAllNoticias()).withSelfRel());
     }
+
 
     @GetMapping
     public CollectionModel<EntityModel<NoticiaModel>> getAllNoticias() {

@@ -35,7 +35,7 @@ public class UsuarioService {
         return usuarioRepository.findById(id).map(usuario -> {
             usuario.setNm_Usuario(usuarioDetails.getNm_Usuario());
             usuario.setNr_Cpf(usuarioDetails.getNr_Cpf());
-            usuario.setNm_RG(usuarioDetails.getNm_RG());
+            usuario.setNm_Rg(usuarioDetails.getNm_Rg());
             usuario.setDt_Nascimento(usuarioDetails.getDt_Nascimento());
             usuario.setNm_Email(usuarioDetails.getNm_Email());
             usuario.setNm_Senha(usuarioDetails.getNm_Senha());

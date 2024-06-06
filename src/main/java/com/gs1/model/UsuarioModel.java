@@ -23,28 +23,29 @@ public class UsuarioModel {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long Id_Usuario;
+	@Column(name = "id_usuario")
+	private Long id_Usuario;
 	
-	@Column
-	private String Nm_Usuario;
+	@Column(name = "nm_usuario", nullable = false)
+	private String nm_Usuario;
 	
-	@Column
-	private int Nr_Cpf;
+	@Column(name = "nr_cpf", nullable = false)
+	private int nr_Cpf;
 	
-	@Column 
-	private String Nm_RG;
+	@Column(name = "nm_rg", nullable = true)
+	private String nm_Rg;
 	
-	@Column
-	private LocalDate Dt_Nascimento;
+	@Column(name = "dt_nascimento", nullable = true)
+	private LocalDate dt_Nascimento;
 	
-	@Column
-	private String Nm_Email;
+	@Column(name = "nm_email", nullable = false)
+	private String nm_Email;
 	
-	@Column
-	private String Nm_Senha;
+	@Column(name = "nm_senha", nullable = false)
+	private String nm_Senha;
 	
-	@Column
-	private LocalDate Dt_Cadastro;
+	@Column(name = "dt_cadastro", nullable = true)
+	private LocalDate dt_Cadastro;
 	
 	
 	
