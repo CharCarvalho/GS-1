@@ -55,15 +55,10 @@ cd GS-1
 
 No arquivo src/main/resources/application.properties, configure as propriedades do banco de dados:
 
-spring.datasource.url=jdbc:h2:mem:testdb
-
-spring.datasource.driverClassName=org.h2.Driver
-
-spring.datasource.username=sa
-
-spring.datasource.password=password
-
-spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.datasource.url=jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl
+spring.datasource.username=rm94156
+spring.datasource.password=120703
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 ## Executar a Aplicação
 
@@ -75,11 +70,11 @@ mvn spring-boot:run
 
 A aplicação estará disponível em http://localhost:8080.
 
-## Documentação da API
+# Documentação da API
 
 Endpoints
 
-Usuários
+## Usuários
 
 **Criar Usuários:** POST /usuarios
 
@@ -95,7 +90,7 @@ Request Body: Objeto UsuarioModel
 
 **Deletar Usuário:** DELETE /usuarios/{id}
 
-# Notícias
+## Notícias
 
 **Criar Notícias:** POST /noticias
 
