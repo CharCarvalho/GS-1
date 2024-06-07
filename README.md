@@ -1,4 +1,4 @@
-# GS-1
+# Global Solution - 1
 
 Este projeto visa desenvolver um aplicativo mobile para disseminar informações e notícias sobre problemas que afetam os ambientes marinhos. O foco principal é conscientizar e informar os usuários sobre questões como poluição marinha, derretimento de geleiras e outras problemáticas ambientais que impactam a vida cotidiana. A conscientização pública é essencial para a preservação do meio ambiente, e o aplicativo surge como uma ferramenta educativa e informativa.
 
@@ -48,7 +48,8 @@ O projeto está organizado nas seguintes camadas:
 ### Clonar o Repositório
 
 ```bash
-git clone https://github.com/CharCarvalho/GS-1.git)
+git clone https://github.com/CharCarvalho/GS-1.git
+
 cd GS-1
 ```
 ## Configurar o Banco de Dados
@@ -56,8 +57,8 @@ cd GS-1
 No arquivo src/main/resources/application.properties, configure as propriedades do banco de dados:
 
 spring.datasource.url=jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl
-spring.datasource.username=rm94156
-spring.datasource.password=120703
+spring.datasource.username=usuario
+spring.datasource.password=senha
 spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 ## Executar a Aplicação
@@ -111,6 +112,16 @@ Deploy em Nuvem
 Para o deploy em nuvem, siga as instruções específicas da Azure.
 
 ## Contribuidores
+
+Antonio Augusto Gomes dos Santos - 550344 - 2TDSR
+
+Camilla Ribeiro Santana - 99491 - 2TDSR
+
+Charles Pinto da Silveira Carvalho - 550113 - 2TDSR
+
+Luan Ribeiro Dias - 94156 - 2TDSR
+
+Raphael Torres Gonçalves - 99354 - 2TDSR
 
 ## Vídeo de Demonstração
 O vídeo de demonstração do funcionamento do software pode ser acessado no seguinte link: https://www.youtube.com/watch?v=rpnYXeC02mM
