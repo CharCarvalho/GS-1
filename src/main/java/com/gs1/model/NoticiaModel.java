@@ -29,7 +29,7 @@ public class NoticiaModel {
 	@Column(name = "nm_titulo", nullable = false)
 	private String nm_Titulo;
 	
-	@Column(name = "nm_subtitulo", nullable = false)
+	@Column(name = "nm_subtitulo")
 	private String nm_Subtitulo;
 	
 	@Column(name = "dt_noticia", nullable = false)

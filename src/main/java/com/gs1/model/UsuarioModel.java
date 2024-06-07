@@ -29,7 +29,7 @@ public class UsuarioModel {
 	@Column(name = "nm_usuario", nullable = false)
 	private String nm_Usuario;
 	
-	@Column(name = "nr_cpf", unique = true, nullable = false)
+	@Column(name = "nr_cpf", nullable = false)
 	private Long nr_Cpf;
 	
 	@Column(name = "nm_rg", nullable = true)
